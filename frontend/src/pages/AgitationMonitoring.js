@@ -130,7 +130,7 @@ function AgitationMonitoring() {
             <div className="au-item">
               <h4>Agitation Counter</h4>
               <p>Increases on movement, cooldown when still</p>
-              <p>Critical alert when > 20</p>
+              <p>Critical alert when &gt; 20</p>
             </div>
           </div>
         </div>
