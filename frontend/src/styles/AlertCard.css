@@ -1,0 +1,125 @@
+.alert-card {
+  background: var(--bg-card);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-left: 4px solid;
+  transition: all 0.3s ease;
+  animation: popIn 0.3s ease;
+  border: 1px solid var(--border);
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.alert-card.alert-critical {
+  border-left-color: var(--accent);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, var(--bg-card) 100%);
+}
+
+.alert-card.alert-warning {
+  border-left-color: var(--warning);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, var(--bg-card) 100%);
+}
+
+.alert-card.alert-info {
+  border-left-color: var(--info);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, var(--bg-card) 100%);
+}
+
+.alert-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.alert-icon-title {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.alert-icon-title svg {
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.alert-card.alert-critical .alert-icon-title svg {
+  color: var(--accent);
+}
+
+.alert-card.alert-warning .alert-icon-title svg {
+  color: var(--warning);
+}
+
+.alert-header h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+}
+
+.alert-time {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.alert-dismiss {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  padding: 0.25rem;
+}
+
+.alert-dismiss:hover {
+  color: var(--text-primary);
+}
+
+.alert-message {
+  margin: 1rem 0;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.alert-details {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.severity-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.severity-badge.critical {
+  background-color: var(--accent);
+}
+
+.severity-badge.warning {
+  background-color: var(--warning);
+}
+
+.severity-badge.info {
+  background-color: var(--info);
+}
