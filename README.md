@@ -385,11 +385,6 @@ For issues or questions:
 
 ---
 
-## 📄 License
-
-This project is part of MHA Pain Watcher initiative.
-
----
 
 **Last Updated:** January 22, 2026
 **Version:** 1.0.0
